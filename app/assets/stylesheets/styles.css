@@ -1,4 +1,4 @@
-.left {
+.tilt-left {
   transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
 }
@@ -10,52 +10,56 @@ body {
   padding: 20px;
 }
 
-.menu {
-  width: 100%;
+.main {
+  width: 60%;
   height: 100rem;
-  background: url(menu-bg.png) no-repeat top center; 
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-  padding: 20px;
+  background-image: url(menu-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top; 
 }
 
-hr {
-  height: 2px;
-  width: 5rem;
-  background-color: black;
-  border-color: black;
+.main-text {
+  padding-left: 5rem;
 }
 
 .zine {
   filter: grayscale(2%) contrast(1) brightness(90%);
 }
 
-.hubcity {
-	position: relative;
-	margin-bottom: 1.5rem;
-	font-family: 'League Gothic';
-	color: rgba(2, 0, 0, 0.74);
-	font-size: 7em;
-	line-height: .75;
-	letter-spacing: -0.037em;
-	text-transform: uppercase;
+.tab {
+  border: 0 1rem 1rem 1rem;
+  border-style: groove;
 }
 
-.hubcity:after {
-	content: 'Hub City Seal';
-	position: absolute;
-  margin-bottom: 3%;
-  padding-top: 10%;
-	left: 15%;
-	background: url('dc-distressed-bg-1.jpg');
-	background-size: cover;
-	color: rgba(255, 255, 255, 0);
-	mix-blend-mode: hard-light;
-  opacity: 0.4;
+/* Main div for border to extend to 50% from bottom left corner */
+
+.tab-bottom {
+  position: relative;
 }
 
-.main-text {
-  position: static;
-  right: 10rem;
+.tab-bottom:after {
+  content: '';
+  width: 80%;
+  height: 4px;
+  background: rgba(76, 76, 76, 0.904);
+  bottom: -4px;
+  margin-left: 16%;
+  margin-right: auto;
 }
+
+.tab-link {
+  color: black;
+}
+
+.tab-link-active {
+  color: whitesmoke;
+}
+
+.active {
+  background-color: rgb(61, 60, 60);
+}
+

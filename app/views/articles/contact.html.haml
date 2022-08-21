@@ -1,0 +1,13 @@
+.container.main.tilt-left.zine.d-none.d-md-block
+  .row
+    .h1.text-center.pt-5 HUB CITY SEAL
+    .p.text-center Est. 2022
+
+  .row.pt-3.tab-bottom
+    .col-2
+    .col-3.col-xs-6.tab.mx-1
+      = link_to "Home",  root_path, :class => "tab-link" 
+    .col-3.col-xs-6.tab.mx-1.active
+      = link_to "Contact",  contact_path, :class => "tab-link-active" 
+    .col-3.col-xs-6.tab.mx-1
+      = link_to "Find a Copy",  finder_path, :class => "tab-link" 

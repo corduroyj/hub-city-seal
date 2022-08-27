@@ -6,24 +6,34 @@
 body {
   background-image: url(hubcityseal-bg.jpg); 
   background-size: 100rem;
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   padding: 20px;
 }
 
+.footer {
+  bottom: 5rem;
+  width: 100%;
+  position: absolute;
+}
+
 .main {
-  width: 60%;
-  height: 100rem;
+  height: 80rem;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   background-image: url(menu-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top; 
+  font-family: "Times New Roman", Times, serif;
+}
+
+.arial  {
+  font-family: "Arial", Times, serif;
 }
 
 .main-text {
-  padding-left: 5rem;
+  font-size: 1.5vw;
 }
 
 .zine {
@@ -61,4 +71,37 @@ body {
 
 .active {
   background-color: rgb(61, 60, 60);
+}
+
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
 }

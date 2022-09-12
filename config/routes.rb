@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root "articles#index"
 
   get "/contact", to: "articles#contact"
+  get "/create", to: "articles#create"
   get "/finder", to: "articles#finder"
 end

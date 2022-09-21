@@ -1,24 +1,7 @@
 .container
-  .col-1
+  .col-1.d-none.d-md-block
   .col-10.main.tilt-left.zine.d-none.d-md-block
-    .row
-      = image_tag "hubcitysealtitle.svg", style: 'width:80%; margin-left:auto; margin-right:auto;'
-    .row.pt-3
-      .col-1
-      .col-3.col-xs-6.tab.mx-1.active
-        = link_to "Home",  root_path, :class => "tab-link-active" 
-      .col-3.col-xs-6.tab.mx-1
-        = link_to "Contact",  contact_path, :class => "tab-link" 
-      .col-3.col-xs-6.tab.mx-1
-        = link_to "Find a Copy",  finder_path, :class => "tab-link"  
-
-    .row.photocopy-mask.pt-4
-      .col-1
-      .col
-        .h2 Texttextloremipsum Texttextloremipsum Texttextloremipsum Texttextloremipsum
-        .p Texttextloremipsum Texttextloremipsum Texttextloremipsum Texttextloremipsum
-
-    .row.photocopy-mask.pt-4
-      .col-1
-      .col
-        .h1.arial.main-text.rainbow_text_animated To read and to write is to hug with the mind,
+    = render "articles/indexContent"
+  .col-1.d-none.d-md-block
+  .d-block.d-md-none.mobile
+    = render "articles/indexContent"

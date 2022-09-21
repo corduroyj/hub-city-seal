@@ -1,13 +1,7 @@
 .container
-  .col-1
+  .col-1.d-none.d-md-block
   .col-10.main.tilt-left.zine.d-none.d-md-block
-    .row
-      = image_tag "hubcitysealtitle.svg", style: 'width:80%; margin-left:auto; margin-right:auto;'
-    .row.pt-3
-      .col-1
-      .col-3.col-xs-6.tab.mx-1
-        = link_to "Home",  root_path, :class => "tab-link" 
-      .col-3.col-xs-6.tab.mx-1
-        = link_to "Contact",  contact_path, :class => "tab-link" 
-      .col-3.col-xs-6.tab.mx-1.active
-        = link_to "Find a Copy",  finder_path, :class => "tab-link-active" 
+    = render "articles/finderContent"
+  .col-1.d-none.d-md-block
+  .d-block.d-md-none.mobile
+    = render "articles/finderContent"

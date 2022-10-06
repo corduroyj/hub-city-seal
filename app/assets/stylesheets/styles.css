@@ -17,13 +17,13 @@ body {
 }
 
 .main {
-  height: 80rem;
+  height: 90%;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   background-image: url(menu-bg.png);
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   font-family: "Times New Roman", Times, serif;
 }
@@ -33,6 +33,7 @@ body {
   border-radius: 1rem;
   height: 100%;
   width: 100%;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .arial  {

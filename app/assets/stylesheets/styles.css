@@ -24,7 +24,10 @@ body {
   margin-top: 10%;
   background-image: url(menu-bg.png);
   /* background-size: contain; */
+  background-size:cover;
+  min-height: 60rem;
   background-repeat: no-repeat;
+  margin-bottom: 4rem;
   font-family: "Times New Roman", Times, serif;
 }
 
